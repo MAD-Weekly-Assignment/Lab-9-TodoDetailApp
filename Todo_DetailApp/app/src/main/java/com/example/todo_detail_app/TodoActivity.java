@@ -83,8 +83,6 @@ public class TodoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                /* Note, the child class being called has a static method determining the parameter
-                   to be passed to it in the intent object */
                 Intent intent = TodoDetail.newIntent(TodoActivity.this, mTodoIndex);
 
                 /* second param requestCode identifies the call as there could be many "intents" */
